@@ -157,14 +157,22 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
-        section h2 {
-            color: #fefffe;
+        /* 普通内容区的 section 标题使用深色 */
+        .main-content section h2 {
+            color: #2d5a27;
             border-bottom: 3px solid #c1e6ba;
             padding-bottom: 10px;
             margin-bottom: 1.5rem;
             display: inline-block;
         }
-        
+
+        /* 英雄区保持白色标题 */
+        .hero h2 {
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
         section h3 {
             color: #3a7c32;
             margin: 1.5rem 0 0.8rem;
@@ -500,9 +508,12 @@
             <h2>吸烟污染：被忽视的生态威胁</h2>
             <h2>Smoking Pollution: An Overlooked Ecological Threat</h2>
             <p>一个关于公共空间设计、行为规范与可持续解决方案的探究性研究项目。我们应用解放性设计思维，深入了解吸烟污染问题，并与利益相关者合作寻求切实可行的解决方案。</p>
+            <p>我们为了增加群众对于吸烟的了解所以我们决定宣传有关吸烟的危害（对社会，个人健康和自然界）。这个网站主要包含了我们小组做了关于这个项目的所有过程和一些有关吸烟的污染科普。</p>
+            <p>In order to enhance the public's understanding of smoking, we decided to promote the dangers of smoking (to society, personal health and the environment). This website mainly contains all the processes our team went through regarding this project, as well as some popular science information about smoking pollution.</p>
+
             <div class="data-points">
                 <div class="data-point">
-                    <div class="data-value">4</div>
+                    <div class="data-value">4 Weeks</div>
                     <div class="data-label">项目持续时间</div>
                     <div class="data-label">Project Duration</div>
                 </div>
@@ -528,7 +539,7 @@
                 <div class="section-icon">
                     <i class="fas fa-info-circle"></i>
                 </div>
-                <h2>项目概览</h2>
+                <h2>项目概览 Project Brief</h2>
             </div>
             
             <h3>问题定义</h3>
@@ -557,20 +568,24 @@
             <h3>可持续性分析</h3>
             <div class="card-container">
                 <div class="card">
-                    <h4><i class="fas fa-user"></i> 个人层面</h4>
+                    <h4><i class="fas fa-user"></i> 个人层面 Personal Level</h4>
                     <p>吸烟者的习惯、成瘾性、在公共空间的尴尬感；非吸烟者对环境和健康的担忧。</p>
+                    <p>The habits of smokers, their addiction, the awkwardness they feel in public spaces; the concerns of non-smokers about the environment and health.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-users"></i> 社区层面</h4>
+                    <h4><i class="fas fa-users"></i> 社区层面 Socity Level</h4>
                     <p>校园/社区的清洁形象、公共健康文化、邻里关系、清洁成本。</p>
+                    <p>The clean image of campus/community, public health culture, neighborhood relationships, and cleaning costs.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-globe"></i> 全球层面</h4>
+                    <h4><i class="fas fa-globe"></i> 全球层面 Global Level</h4>
                     <p>烟头是全球散落量第一的塑料垃圾；微塑料和有毒化学物质通过水循环进入全球生态系统。</p>
+                    <p>Cigarette butts are the most littered plastic waste globally; microplastics and toxic chemicals enter global ecosystems through water cycles.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-tree"></i> 生态层面</h4>
+                    <h4><i class="fas fa-tree"></i> 生态层面 Environmental Level</h4>
                     <p>滤嘴（醋酸纤维素塑料）难以降解；尼古丁、重金属等毒素渗入土壤和水体，危害动植物。</p>
+                    <p>Filter tips (cellulose acetate plastic) are difficult to biodegrade; nicotine, heavy metals, and other toxins seep into soil and water bodies, harming plants and animals.</p>
                 </div>
             </div>
         </section>
@@ -581,42 +596,51 @@
                 <div class="section-icon">
                     <i class="fas fa-project-diagram"></i>
                 </div>
-                <h2>研究过程：解放性设计方法</h2>
+                <h2>研究过程 Research Process</h2>
             </div>
             
             <div class="process-timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">第1-2周</div>
-                    <h4>共情阶段</h4>
-                    <p>通过访谈和观察深入了解利益相关者：吸烟者、非吸烟者、环卫工人和校园管理人员。我们收集了关于行为模式、挑战和需求的定性数据。</p>
+                    <div class="timeline-date">Week 1-2</div>
+                    <h4>共情阶段 Emphasizing Period</h4>
+                    <p>在这两周，我们绘制了“利益相关者地图”和两张“未来轮”（Futures Wheel），并通过实地采访吸烟者、非吸烟者及UWC学生，收集多元声音，制定解决方案并设计产品原型。</p>
+                    <p>During these two weeks, we created the "Stakeholder Map" and two "Futures Wheels", conducted on-site interviews with smokers, non-smokers, and UWC students to gather diverse perspectives, formulate solutions, and design product prototypes.</p>
+                    
                     <div class="image-gallery">
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="访谈过程">
-                            <div class="image-caption">与吸烟者进行访谈</div>
+                            <a href="images/stakeholdermap.png" target="_blank">
+                                <img src="images/stakeholdermap.png" alt="利益相关者地图 Stakeholder Map">
+                            </a>
+                            <div class="image-caption">利益相关者地图 Stakeholder Map</div>
                         </div>
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="观察记录">
-                            <div class="image-caption">记录烟头热点区域</div>
+                            <a href="images/Future Wheels 1.png" target="_blank">
+                                <img src="images/Future Wheels 1.png" alt="未来轮1 Futures Wheel 1">
+                            </a>
+                            <div class="image-caption">未来轮1（负面影响） Futures Wheel 1 (Negative Impact)</div>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/Future Wheels 2.png" target="_blank">
+                                <img src="images/Future Wheels 2.png" alt="未来轮 Futures Wheel 2">
+                            </a>
+                            <div class="image-caption">未来轮2（正面影响） Futures Wheel 2 (Positive Impact)</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="timeline-item">
-                    <div class="timeline-date">第2-3周</div>
-                    <h4>定义阶段</h4>
-                    <p>基于共情阶段的数据，我们明确了核心问题："如何为校园内的吸烟者设计便捷、体面且具有提示功能的烟头处理方案，同时减轻环卫工人的清洁负担？"</p>
+                    <div class="timeline-date">Week 2-3</div>
+                    <h4>分析阶段 Analysis Period</h4>
+                    <p>基于问卷调查和共情阶段的研究，我们设计了三款产品，综合考虑，我们认为第二款产品得到的反馈更多元。我们注重改进了这款产品的功能和结构。</p>
+                    <p>Based on the questionnaire survey and the empathy stage research, we designed three products. After comprehensive consideration, we believe that the second product received more diverse feedback. We focused on improving the functions and structure of this product.</p>
                 </div>
                 
                 <div class="timeline-item">
-                    <div class="timeline-date">第3-4周</div>
-                    <h4>构思与原型阶段</h4>
-                    <p>团队头脑风暴产生了多个解决方案，并制作了初步原型，包括便携式烟灰袋、改进型烟头回收桶和公共空间提示系统。</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">第4周</div>
-                    <h4>测试与行动阶段</h4>
-                    <p>我们将原型展示给利益相关者，收集反馈并进行迭代改进。最终实施了一个小规模的试点项目，在校园内三个热点区域设置了改进型回收设施。</p>
+                    <div class="timeline-date">Week 3-4</div>
+                    <h4>海报制作与展示阶段 Poster Making and Presentation Period</h4>
+                    <p>在3-4周，我们总结了我们的研究和设计成果，我们制作了展示海报和此网站并进行了项目展示，向校园社区和利益相关者分享我们的发现和解决方案。</p>
+                    <p>During the period of 3 to 4 weeks, we summarized our research and design outcomes. We created presentation posters and this website, and conducted a project presentation to share our findings and solutions with the campus community and stakeholders.</p>
+
                 </div>
             </div>
         </section>
@@ -628,50 +652,71 @@
                     <i class="fas fa-chart-bar"></i>
                 </div>
                 <h2>研究发现</h2>
+                <h2>Research Findings</h2>
             </div>
             
-            <h3>关键数据</h3>
+            <h3>关键数据 Key Data</h3>
             <div class="data-points">
                 <div class="data-point">
-                    <div class="data-value">68%</div>
-                    <div class="data-label">吸烟者表示会使用便携烟灰袋如果提供</div>
+                    <div class="data-value">7%</div>
+                    <div class="data-label">受访者有吸烟习惯</div>
+                    <div class="data-label">Respondents with smoking habit</div>
                 </div>
                 <div class="data-point">
-                    <div class="data-value">42%</div>
-                    <div class="data-label">非吸烟者认为烟头是校园最严重的垃圾问题</div>
+                    <div class="data-value">65%</div>
+                    <div class="data-label">意识到环境影响</div>
+                    <div class="data-label">Aware of environmental impacts</div>
                 </div>
                 <div class="data-point">
-                    <div class="data-value">92%</div>
-                    <div class="data-label">环卫工人希望有更好的烟头收集设施</div>
+                    <div class="data-value">37%</div>
+                    <div class="data-label">首选产品1（戒烟辅助）</div>
+                    <div class="data-label">Prefer Product 1 (quit aid)</div>
+                </div>
+                <div class="data-point">
+                    <div class="data-value">2.5/10</div>
+                    <div class="data-label">吸烟行为平均评分（负面）</div>
+                    <div class="data-label">Average rating of smoking (negative)</div>
                 </div>
             </div>
             
-            <h3>主要发现</h3>
+            <h3>主要发现 Main Findings</h3>
             <div class="card-container">
                 <div class="card">
-                    <h4><i class="fas fa-map-marker-alt"></i> 热点区域识别</h4>
-                    <p>我们确定了校园内5个烟头集中的热点区域，主要位于建筑入口、长椅附近和较隐蔽的角落。这些区域共同特点是缺乏明显的烟头回收设施。</p>
+                    <h4><i class="fas fa-user-friends"></i> 低吸烟率与社会规范</h4>
+                    <p>仅7%受访者有吸烟习惯，70%表示周围几乎无人或少数人吸烟，反映校园社区反吸烟规范环境强劲。非吸烟者对二手烟和烟头污染高度敏感。</p>
+                    <p>Only 7% of respondents have a smoking habit, with 70% reporting few or no smokers around them, indicating a strong anti-smoking normative environment in the campus community. Non-smokers are highly sensitive to secondhand smoke and butt pollution.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-user-friends"></i> 行为模式分析</h4>
-                    <p>吸烟者普遍表示，当找不到合适的垃圾桶时，他们会将烟头扔在地上。许多人表示，如果有更明显、更便捷的回收选择，他们愿意使用。</p>
+                    <h4><i class="fas fa-chart-pie"></i> 产品偏好与反馈</h4>
+                    <p>37%首选产品1（安全戒烟辅助），30%选产品2（厌恶片剂），但反馈指出产品2可能因“难吃/不适”而采用率低；产品3被视为类似电子烟，效率存疑。</p>
+                    <p>37% prefer Product 1 (safe quit aid), 30% choose Product 2 (aversion tablet), but feedback notes low adoption for Product 2 due to "unpleasant/uncomfortable" taste; Product 3 seen as e-cig-like, potentially inefficient.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-trash-alt"></i> 现有设施问题</h4>
-                    <p>普通垃圾桶的投掷口较小，烟头容易掉落在周围。专门烟灰缸数量不足，且清洁不及时，导致使用率低。</p>
+                    <h4><i class="fas fa-exclamation-triangle"></i> 危害认知与政策支持</h4>
+                    <p>65%认知环境影响（烟头毒素渗入水土），85%支持更严格政策（如禁公共场所、提高税、烟头设施），期望结合教育减少污名化。</p>
+                    <p>65% recognize environmental impacts (butt toxins leaching into water/soil), 85% support stricter policies (e.g., public bans, tax hikes, butt collection facilities), expecting education to reduce stigma.</p>
                 </div>
             </div>
             
-            <h3>系统性问题</h3>
-            <p>我们的研究发现，烟头污染不仅仅是一个行为道德问题，更是一个系统设计问题：</p>
+            <h3>系统性问题 Systemic Issues</h3>
+            <p>调研揭示烟头污染不仅是个人行为问题，更是系统设计与社会动态的产物：</p>
             <ul style="padding-left: 1.5rem; margin-top: 1rem;">
-                <li><strong>基础设施不足：</strong>公共空间缺乏专门、便捷的烟头处理设施。</li>
-                <li><strong>清洁与维护不匹配：</strong>即使有设施，清洁频率不足导致设施失效。</li>
-                <li><strong>社会污名化：</strong>吸烟者感到被污名化，这影响了他们负责任处理烟头的意愿。</li>
-                <li><strong>缺乏系统性解决方案：</strong>解决方案往往针对症状而非根本原因。</li>
+                <li><strong>基础设施缺失：</strong>公共空间缺乏便捷烟头回收设施，导致乱扔率高（吸烟者中25%承认随手丢弃）。</li>
+                <li><strong>执法与教育不均衡：</strong>政策支持高但执行松散，需加强宣传以提升环境意识而非仅道德指责。</li>
+                <li><strong>污名化障碍：</strong>吸烟者感尴尬，影响负责任处置；解决方案应社区导向，避免加剧社会分歧。</li>
+                <li><strong>成瘾与替代挑战：</strong>低戒烟意愿（吸烟者中仅50%有计划），产品需结合心理/社会支持，而非单一工具。</li>
             </ul>
+            <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+                <li><strong>Lack of infrastructure: </strong>The public spaces lack convenient facilities for cigarette butt recycling, resulting in a high rate of littering (25% of smokers admit to discarding them carelessly).</li>
+                <li><strong>Inequality between law enforcement and education: </strong>Policy support is high but enforcement is loose, requiring stronger awareness campaigns rather than moral condemnation.</li>
+                <li><strong>Stigmatization Disorder: </strong>Smokers feel embarrassed, affecting responsible disposal; solutions should be community-oriented to avoid exacerbating social divisions.</li>
+                <li><strong>Addiction and Alternative Challenges: </strong>Low quit intention (only 50% of smokers have a plan), products need to combine psychological/social support rather than being standalone tools.</li>
+            </ul>
+            <p>这些发现支持项目目标：通过教育+设施+产品，减少污染并提升社区福祉。（基于82份问卷+商场访谈）</p>
+            <p>These findings underscore the project's aim: reduce pollution and enhance community well-being via education + facilities + products. (Based on 82 surveys + mall interviews)</p>
         </section>
 
+        
         <!-- 解决方案部分 -->
         <section id="solutions">
             <div class="section-header">
@@ -679,34 +724,74 @@
                     <i class="fas fa-lightbulb"></i>
                 </div>
                 <h2>解决方案与建议</h2>
+                <h2>Solutions and Recommendations</h2>
             </div>
             
-            <h3>原型解决方案</h3>
+            <h3>原型解决方案 Prototype Solutions</h3>
+            <!-- 新增：产品整体原型图 -->
+            <div class="image-gallery" style="margin: 1.5rem 0;">
+                <div class="gallery-item" style="max-width: 800px; margin: 0 auto;">
+                    <a href="images/prototype.jpg" target="_blank">
+                        <img src="images/prototype.jpg" 
+                            alt="三种产品原型草图 Three Product Prototypes Sketch" 
+                            style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </a>
+                    <div class="image-caption">三种产品原型整体草图（Product 1, 2, 3）<br>Overall Sketch of Three Product Prototypes</div>
+                </div>
+            </div>
             <div class="card-container">
                 <div class="card">
-                    <h4><i class="fas fa-box"></i> 便携式烟灰袋</h4>
-                    <p>设计小巧、防火的便携式烟灰袋，可免费在校园入口、吸烟区获取。方便吸烟者暂时存放烟头，直到找到垃圾桶。</p>
+                    <h4><i class="fas fa-pills"></i> 产品1：安全戒烟辅助片剂 Product 1: Safe Quit-Aid Tablet</h4>
+                    <p>一种可食用的辅助片剂，帮助吸烟者逐渐减少尼古丁依赖，通过温和成分模拟戒断缓解，同时无环境污染风险。设计为便携、易吞服，针对有戒烟意愿的用户。</p>
+                    <p>An edible tablet aid for smokers to gradually reduce nicotine dependence via mild ingredients that simulate withdrawal relief, with no environmental pollution risk. Designed for portability and ease of use, targeting those motivated to quit.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-trash-restore"></i> 改进型烟头回收桶</h4>
-                    <p>设计顶部有较大开口、内置防火材料的专用回收桶。桶身带有环保信息和处理指引，放置在热点区域。</p>
+                    <h4><i class="fas fa-exclamation-triangle"></i> 产品2：厌恶行为干预片剂 Product 2: Aversion Behavior Intervention Tablet</h4>
+                    <p>一种带有不愉快口感的食用片剂，旨在通过条件反射产生厌恶感，促进戒烟行为。结合有益营养成分，但需优化口味以提高接受度。</p>
+                    <p>An edible tablet with an unpleasant taste to create aversion through conditioned reflex, promoting quitting. Includes beneficial nutrients, but requires flavor optimization for better acceptance.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-bell"></i> 行为提示系统</h4>
-                    <p>在热点区域设置创意提示标识，如"您的烟头，地球的负担"等，结合二维码链接到更多环保信息。</p>
+                    <h4><i class="fas fa-filter"></i> 产品3：无害化香烟过滤器 Product 3: Harmless Cigarette Filter</h4>
+                    <p>一种可替换过滤器，旨在过滤尼古丁和有害物质，减少烟头毒素释放对环境的冲击。类似于电子烟替代，但聚焦物理过滤以降低污染。</p>
+                    <p>A replaceable filter to remove nicotine and toxins, reducing environmental impact from butt leachates. Similar to e-cig alternatives but focused on physical filtration to minimize pollution.</p>
                 </div>
             </div>
             
-            <h3>实施建议</h3>
-            <ul style="padding-left: 1.5rem; margin-top: 1rem;">
-                <li><strong>分阶段实施：</strong>先在3个最严重的热点区域试点，评估效果后再推广。</li>
-                <li><strong>多方合作：</strong>与学校后勤部、学生组织和环保社团合作，共同维护设施。</li>
-                <li><strong>教育与宣传并重：</strong>结合设施改进，开展关于烟头污染的环境教育活动。</li>
-                <li><strong>定期评估与调整：</strong>每季度评估设施使用情况和烟头数量变化，及时调整策略。</li>
-            </ul>
+            <h3>产品反馈与改进建议 Product Feedback and Improvement Recommendations</h3>
+            <p>基于问卷和商场访谈反馈，我们重新审视了三种产品。不同受访者对产品的看法各异，反映出行为干预的复杂性。总体上，产品1获得最高认可，但所有产品均需考虑伦理、安全与实际采用率。</p>
+            <p>Based on survey and mall interview feedback, we revisited the three products. Respondents had varied opinions, highlighting the complexity of behavioral interventions. Overall, Product 1 received the highest endorsement, but all require ethical, safety, and adoption considerations.</p>
             
-            <h3>预期影响</h3>
-            <p>我们预计通过实施这些解决方案，试点区域的烟头乱扔现象可以在3个月内减少40-50%，同时提高校园社区对烟头污染问题的认识。</p>
+            <div class="card-container">
+                <div class="card">
+                    <h4><i class="fas fa-thumbs-up"></i> 产品1反馈 Product 1 Feedback</h4>
+                    <p>无明显异议或负面评论。受访者认为其安全、实用，适合有戒烟意愿的用户。建议：加强临床安全验证，确保成分无害（符合伦理规范）。</p>
+                    <p>No disagreements or major improvement comments. Respondents viewed it as safe and practical for motivated quitters. Suggestion: Enhance clinical safety validation to ensure harmless ingredients (ethical compliance).</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-comments"></i> 产品2反馈 Product 2 Feedback</h4>
+                    <p>反馈声音多样：部分人认为“没人会买，因为不满足吸烟需求”；不愿“放嘴里不舒服”；建议“用好味替代厌恶口感”。受欢迎但采用疑虑高，反映公共卫生干预的阻力（如不适、污名）。</p>
+                    <p>Diverse feedback: Some said "no one will buy it as it doesn't meet smokers' needs"; others unwilling due to "uncomfortable in mouth"; suggestion "use pleasant flavors instead." Popular in principle but adoption skepticism high, mirroring public health resistance (discomfort, stigma).</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-question-circle"></i> 产品3反馈 Product 3 Feedback</h4>
+                    <p>被视为“类似于电子烟，人们更偏好电子烟，故低效”；“人们不会主动选择此类产品”。建议：增强独特过滤功能，避免与现有替代品重叠。</p>
+                    <p>Seen as "similar to e-cigarettes, so people prefer e-cigs and it's inefficient"; "people won't actively choose it." Suggestion: Enhance unique filtration to differentiate from existing alternatives.</p>
+                </div>
+            </div>
+            
+            <p><strong>总体结论 Overall Conclusion</strong>：产品1被视为最佳解决方案。然而，鉴于伦理规则，我们需确保产品安全进入口腔。将寻求老师建议，并进行进一步研究以推进开发。这些反馈强调：干预应聚焦内在动机与社区支持，而非单纯工具。</p>
+            <p><strong>Overall Conclusion</strong>: Product 1 is considered the best solution. However, per ethical guidelines, we must ensure mouth-safe ingredients. We will seek teacher advice and conduct further research for progress. Feedback stresses: Interventions should focus on intrinsic motivation and community support, beyond tools alone.</p>
+            
+            <h3>实施建议 Implementation Recommendations</h3>
+            <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+                <li><strong>分阶段迭代：</strong>先试点产品1在校园小范围测试，收集更多反馈后优化产品2/3。</li>
+                <li><strong>多方协作：</strong>与学校、环保社团合作，提供免费样品并整合教育活动，减少污名化。</li>
+                <li><strong>教育宣传结合：</strong>通过网站和校园活动推广产品，强调环境+健康益处，提升采用意愿。</li>
+                <li><strong>评估与调整：</strong>每季度监测使用率和污染减少效果，基于用户反馈迭代设计。</li>
+            </ul>
+            <h3>预期影响 Expected Impact</h3>
+            <p>通过这些产品与支持系统，我们预计可在6个月内将校园烟头污染减少30%，同时提升社区戒烟意识和福祉，促进可持续行为变革。</p>
+            <p>Via these products and support systems, we anticipate a 30% reduction in campus butt pollution within 6 months, alongside heightened quit awareness and community well-being, fostering sustainable behavioral change.</p>
         </section>
 
         <!-- 团队介绍部分 -->
@@ -746,16 +831,16 @@
             <h3>项目信息</h3>
             <div class="data-points">
                 <div class="data-point">
-                    <div class="data-value">4周</div>
-                    <div class="data-label">项目持续时间</div>
+                    <div class="data-value">4</div>
+                    <div class="data-label">项目持续时间（周） Project Duration (Weeks)</div>
                 </div>
                 <div class="data-point">
-                    <div class="data-value">28+</div>
-                    <div class="data-label">访谈人数</div>
+                    <div class="data-value">20+</div>
+                    <div class="data-label">访谈人数 Interviewees</div>
                 </div>
                 <div class="data-point">
-                    <div class="data-value">150+</div>
-                    <div class="data-label">问卷回应</div>
+                    <div class="data-value">82</div>
+                    <div class="data-label">问卷回应 Questionnaire Responses</div>
                 </div>
             </div>
         </section>
@@ -779,7 +864,7 @@
                     <div class="team-members">
                         <span class="team-member">Yihang Feng 冯怿航</span>
                         <span class="team-member">Suyao (Sue) Dong 董苏瑶</span>
-                        <span class="team-member">Yifu (Leo) zhao 赵一夫</span>
+                        <span class="team-member">Yifu (Leo) Zhao 赵一夫</span>
                         <span class="team-member">Yuxin (Cindy) Pu 蒲宇馨</span>
                     </div>
                     <p style="margin-top: 15px; color: #ddd;">联系我们：yhfeng25@uwcchina.org yfzhao25@uwcchina.org yxpu25@uwcchina.org sydong25@uwcchina.org</p>
